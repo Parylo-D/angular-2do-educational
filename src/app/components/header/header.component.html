@@ -1,0 +1,13 @@
+<header class="my-class" [ngClass]="{
+    'first': true,
+    'second': isLogined
+}">
+    <!-- <h1 [ngStyle]="{
+        'font-size': titleFontSize
+    }">{{title}}</h1> -->
+
+    <p [innerHTML]="subName"></p>
+
+    <!-- <button [disabled]="!subName">LogIn</button> -->
+    <button (click)="login($event)">LogIn</button>
+</header>
