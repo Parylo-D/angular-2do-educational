@@ -9,6 +9,7 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Input() title: string;
   @Input() subTitle: string;
+  dataList = ['Angular', 'TS', 'SCSS']
 
 @Output() testOutput = new EventEmitter<string>();
 
@@ -20,5 +21,8 @@ ngOnInit():void {
  login():void{
    console.log('logIn');
    this.testOutput.emit('Header login works')
+ }
+ addItem(item: string): void{
+   this.dataList.push(item);
  }
 }
