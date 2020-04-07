@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular2do';
+  headerTitle = 'Angular 2do';
+  headerSubTitle = 'Educational project.';
+
+  testOutputApp(event: string): void {
+     console.log(event);
+  }
 }

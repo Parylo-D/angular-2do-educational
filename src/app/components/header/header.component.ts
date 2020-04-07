@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
@@ -7,24 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Input() title: string;
+  @Input() subTitle: string;
 
-// title = 'Angular 2Do!';
-subName = 'Education!';
-isLogined = false;
-titleFontSize = "46px"
+@Output() testOutput = new EventEmitter<string>();
 
-  constructor() { }
+constructor() { }
 
-  ngOnInit() {
-    // setTimeout(() => {
-    //   this.subName = '123 Edited';
-    // }, 5000);
-  }
-login(event):void {
-  this.isLogined = !this.isLogined;
- console.log('LogIn', event); 
+ngOnInit():void {
+ }
+
+ login():void{
+   console.log('logIn');
+   this.testOutput.emit('Header login works')
+ }
 }
-}
-// document.getElementById('id').addEventListener('click', () => {
-//   console.log();
-// });
