@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { UserService } from 'src/app/core/services/users_about/user.service';
+import { UserService } from 'src/app/core/services/users/user.service';
 import { UserInterface } from 'src/app/core/interfaces';
 
 @Component({
@@ -46,7 +46,7 @@ export class UserComponent implements OnInit, OnDestroy {
         this.user = data;
         console.log('getUser userId: number', data)
         console.log('this user', this.user)
-        // console.log('this user.pict', this.user.picture)
+       
       })
   }
 
