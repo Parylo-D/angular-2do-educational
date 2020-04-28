@@ -1,12 +1,10 @@
-p{
-    color: red;
-    margin-top: 15px;
-}
-
 :host {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: -60px;
-    height: 761px;
-  }
+  display  : flex;
+  flex-direction: column;
+  min-height  : 1000px;
+  position: relative;
+}
+*{
+  margin: 0;
+  padding: 0;
+}

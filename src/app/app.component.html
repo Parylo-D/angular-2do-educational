@@ -1,8 +1,13 @@
-<app-header [title]="headerTitle"
-            [subTitle]="headerSubTitle"
-            (testOutput)="testOutputApp($event)">
+<app-header
+  [title]="'Angular '+ headerT"
+  [subName]="subname"
+  (testOutput)="testOutputApp($event)">
 </app-header>
 
-<app-todos></app-todos>
 
-<app-footer></app-footer>
+<app-nav></app-nav>
+<app-main></app-main>
+
+<app-footer>
+  <h2>Footer</h2>
+</app-footer>

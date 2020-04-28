@@ -1,0 +1,31 @@
+:host {
+  flex: 1 0 auto;
+
+}
+
+.is-done {
+  text-decoration: line-through;
+}
+input{
+  position: absolute;
+  top: -35px;
+  left: 5px;
+}
+.radio-wrap{
+  position: absolute;
+  top: -35px;
+  // left: 60px;
+}
+.createBtn{
+  position: relative;
+  right: 14px;
+  top: 90px;
+  width: 260px;
+}
+.createBtn:hover{
+
+  background-color: green;
+}
+ul{
+  margin-top: 80px;
+}

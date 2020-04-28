@@ -1,0 +1,108 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "SCSS",
+      "description": "",
+      "isDone": true,
+      "priority": "low"
+    },
+    {
+      "id": 2,
+      "title": "Java Script",
+      "description": "Learn JS",
+      "isDone": false,
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "title": "Angular",
+      "description": "Learn Angular",
+      "isDone": false,
+      "priority": "hight"
+    },
+    {
+      "id": 4,
+      "title": "Json",
+      "description": "Learn work with json server",
+      "isDone": false,
+      "priority": "hight"
+    },
+    {
+      "id": 5,
+      "title": "BootStrap",
+      "description": "Learn work with BS in Angular",
+      "isDone": false,
+      "priority": "low"
+    },
+    {
+      "id": 6,
+      "title": "CSS",
+      "description": "Learn CSS",
+      "isDone": false,
+      "priority": "medium"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": {
+        "title": "Mr",
+        "first": "John",
+        "last": "Smith"
+      },
+      "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+      "email": "smith.mason@example.com",
+      "phone": "(897)-451-007",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum delectus nesciunt tenetur fuga illo blanditiis, consequuntur odio nihil laborum reprehenderit, magnam inventore nobis commodi! Aliquid obcaecati fugit sequi aspernatur iste et sit nulla esse veniam eius, exercitationem animi officiis voluptatibus inventore impedit pariatur. Nihil recusandae id officia voluptates odio reprehenderit hic, ullam quia fugit quidem libero, asperiores quasi quaerat exercitationem! Quaerat architecto cum sint quasi magni? Vitae saepe eum delectus a sapiente quia accusamus illo non natus voluptas quae explicabo fugit, aliquam suscipit fugiat distinctio qui tenetur consequuntur maxime. Architecto voluptatum eius illo ad cumque optio doloremque nobis inventore."
+    },
+    {
+      "id": 2,
+      "name": {
+        "title": "Miss",
+        "first": "Delores",
+        "last": "Robinson"
+      },
+      "picture": "https://randomuser.me/api/portraits/women/91.jpg",
+      "email": "hannah.harcourt@example.com",
+      "phone": "(789)-483-347",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum delectus nesciunt tenetur fuga illo blanditiis, consequuntur odio nihil laborum reprehenderit, magnam inventore nobis commodi! Aliquid obcaecati fugit sequi aspernatur iste et sit nulla esse veniam eius, exercitationem animi officiis voluptatibus inventore impedit pariatur. Nihil recusandae id officia voluptates odio reprehenderit hic, ullam quia fugit quidem libero, asperiores quasi quaerat exercitationem! Quaerat architecto cum sint quasi magni? Vitae saepe eum delectus a sapiente quia accusamus illo non natus voluptas quae explicabo fugit, aliquam suscipit fugiat distinctio qui tenetur consequuntur maxime. Architecto voluptatum eius illo ad cumque optio doloremque nobis inventore."
+    },
+    {
+      "id": 3,
+      "name": {
+        "title": "Mr",
+        "first": "Ronald",
+        "last": "Curtis"
+      },
+      "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+      "email": "hannah.harcourt@example.com",
+      "phone": "658-450-450",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum delectus nesciunt tenetur fuga illo blanditiis, consequuntur odio nihil laborum reprehenderit, magnam inventore nobis commodi! Aliquid obcaecati fugit sequi aspernatur iste et sit nulla esse veniam eius, exercitationem animi officiis voluptatibus inventore impedit pariatur. Nihil recusandae id officia voluptates odio reprehenderit hic, ullam quia fugit quidem libero, asperiores quasi quaerat exercitationem! Quaerat architecto cum sint quasi magni? Vitae saepe eum delectus a sapiente quia accusamus illo non natus voluptas quae explicabo fugit, aliquam suscipit fugiat distinctio qui tenetur consequuntur maxime. Architecto voluptatum eius illo ad cumque optio doloremque nobis inventore."
+    },
+    {
+      "id": 4,
+      "name": {
+        "title": "Mr",
+        "first": "David",
+        "last": "Miles"
+      },
+      "picture": "https://randomuser.me/api/portraits/men/83.jpg",
+      "email": "hannah.harcourt@example.com",
+      "phone": "360-741-236",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum delectus nesciunt tenetur fuga illo blanditiis, consequuntur odio nihil laborum reprehenderit, magnam inventore nobis commodi! Aliquid obcaecati fugit sequi aspernatur iste et sit nulla esse veniam eius, exercitationem animi officiis voluptatibus inventore impedit pariatur. Nihil recusandae id officia voluptates odio reprehenderit hic, ullam quia fugit quidem libero, asperiores quasi quaerat exercitationem! Quaerat architecto cum sint quasi magni? Vitae saepe eum delectus a sapiente quia accusamus illo non natus voluptas quae explicabo fugit, aliquam suscipit fugiat distinctio qui tenetur consequuntur maxime. Architecto voluptatum eius illo ad cumque optio doloremque nobis inventore."
+    },
+    {
+      "id": 5,
+      "name": {
+        "title": "Ms",
+        "first": "Sara",
+        "last": "Johns"
+      },
+      "picture": "https://randomuser.me/api/portraits/women/79.jpg",
+      "email": "hannah.harcourt@example.com",
+      "phone": "900-210-326",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum delectus nesciunt tenetur fuga illo blanditiis, consequuntur odio nihil laborum reprehenderit, magnam inventore nobis commodi! Aliquid obcaecati fugit sequi aspernatur iste et sit nulla esse veniam eius, exercitationem animi officiis voluptatibus inventore impedit pariatur. Nihil recusandae id officia voluptates odio reprehenderit hic, ullam quia fugit quidem libero, asperiores quasi quaerat exercitationem! Quaerat architecto cum sint quasi magni? Vitae saepe eum delectus a sapiente quia accusamus illo non natus voluptas quae explicabo fugit, aliquam suscipit fugiat distinctio qui tenetur consequuntur maxime. Architecto voluptatum eius illo ad cumque optio doloremque nobis inventore."
+    }
+  ]
+}

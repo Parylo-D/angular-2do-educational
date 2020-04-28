@@ -1,0 +1,21 @@
+nav{
+    border: 3px solid rgba(255, 255, 255, 0.666);
+
+    .active {
+       
+        a{
+            color: gray !important;
+        &:hover{
+            color: white !important;
+        }
+            
+        }
+     }
+     a{
+         color: gray !important;
+         &:hover{
+            color: white !important;
+         }
+      
+     }
+}

@@ -1,0 +1,25 @@
+.card {
+    max-width : 250px;
+    border: 1px solid black;
+    margin-top: 4px;
+  
+    p {
+        display           : -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow     : ellipsis;
+        overflow          : hidden;
+
+    }
+}
+.btn:hover{
+    background-color: green;
+}
+// .col{
+//     margin-left: -10px;
+//     margin-right: -150px;
+   
+// }
+// .row{
+//     margin-left: -250px;
+// }

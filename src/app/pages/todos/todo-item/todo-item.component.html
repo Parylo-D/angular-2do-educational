@@ -1,21 +1,36 @@
-<li>
-    <header>
-        <div>
-         <span class="material-icons">
-             {{(todo.isDone) ? 'check_box': 'check_box_outline_blank' }}
-             </span>
-        <h5 [class.is-done]="todo.isDone">
-        {{todo.title}}
-     </h5>
-        </div>
-
- <div>
-     <button>show/hide details</button>
-     <button>del</button>
- </div>
-    </header>
-  
-    <div>
-        {{todo.description}}
+<li class="container d-flex justify-content-between">
+  <div class="row  m-0 ">
+    <div class="todo-body">
+      <h5
+        [class.is-done]='todo.isDone' [appHighlight]="''">
+        <span
+          class="material-icons"
+          (click)='togleTodo()'>
+          {{(todo.isDone)? 'check_box' : 'check_box_outline_blank'}}
+        </span>
+        {{todo.title}} <span class="badge badge-pill " [ngClass]="bgColorBadges[todo.priority]">
+          {{todo.priority}}</span>
+      </h5>
+      <div class=""
+        *ngIf='isShowDetails'>
+        <p>
+          {{todo.description}}
+        </p>
+      </div>
     </div>
-</li> 
+  </div>
+  <div class="todo-footer">
+    <button class="btn btn-secondary"
+      [disabled]='!todo.description'
+      (click)='toggleDetails()'>
+      {{(!isShowDetails)?'Show':'Hide'}} detalis
+    </button>
+    <button type="button" class="btn btn-warning mx-1"
+      (click)="openModalEdit(todo)">Edit</button>
+    <button
+      class="btn btn-outline-danger"
+      (click)="deleteTodo(todo.id)">Delete
+    </button>
+  </div>
+</li>
+<hr>

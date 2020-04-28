@@ -1,1 +1,2 @@
-export * from './todo.interface';
+export * from './todo.interfaces';
+export * from './user.interfaces';

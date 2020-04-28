@@ -1,16 +1,12 @@
 :host {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: teal;
-    height: 70px;
-    display: flex;
-   }
-p
- {  
-    color: white;
-    font-size: 32px;
-    margin-left: 740px;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: teal;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

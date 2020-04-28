@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnDestroy, OnChanges } from '@angular/core';
 
 
 @Component({
@@ -6,23 +6,21 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy, OnChanges {
   @Input() title: string;
-  @Input() subTitle: string;
-  dataList = ['Angular', 'TS', 'SCSS']
+  @Input() subName: string;
 
-@Output() testOutput = new EventEmitter<string>();
-
-constructor() { }
-
-ngOnInit():void {
- }
-
- login():void{
-   console.log('logIn');
-   this.testOutput.emit('Header login works')
- }
- addItem(item: string): void{
-   this.dataList.push(item);
- }
+  
+  @Output() testOutput = new EventEmitter<string>();
+  
+  constructor() {}
+  
+  ngOnInit(): void {
+    this.testOutput.emit('Educational project for study Angular');
+}
+ngOnDestroy(): void {
+}
+ngOnChanges(): void {
+}
+ 
 }
