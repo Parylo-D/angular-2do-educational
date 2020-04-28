@@ -20,7 +20,7 @@ import { AboutUsComponent } from './pages/about/about-us/about-us.component';
 import { AboutProjectComponent } from './pages/about/about-project/about-project.component';
 import { NavComponent } from './components/nav/nav.component';
 
-import { HighlightDirective } from './shared/highlight/highlight.directive';
+import { HighlightDirective } from './shared/directives/highlight.directive';
 import { FilterBySearchPipe } from './shared/pipes/filterBySearch/filter-by-search.pipe';
 import { FilterByRadioPipe } from './shared/pipes/filterByRadio/filter-by-radio.pipe';
 import { EditTodoComponent } from './pages/todos/edit-todo/edit-todo.component';
