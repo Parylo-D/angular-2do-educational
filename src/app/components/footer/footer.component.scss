@@ -5,8 +5,9 @@
   height: 80px;
   background-color: teal;
   color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  // left: 0;
+  flex-shrink: 0;
 }
