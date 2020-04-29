@@ -7,8 +7,14 @@
   box-shadow: 0 0  $color;
   border-color:  $color;
 }
+
+html{
+  height: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
 .low .custom-control-label::before {

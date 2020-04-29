@@ -29,7 +29,7 @@ export class TodosComponent implements OnInit, OnDestroy {
   private unsubscribe = new Subject();
 
   constructor(
-    private todoServise: TodoService,
+    private todoService: TodoService,
     private modalService: BsModalService
   ) { }
 
@@ -77,7 +77,7 @@ export class TodosComponent implements OnInit, OnDestroy {
 
   }
   private getTodos(): void {
-    this.todoServise.getTodos()
+    this.todoService.getTodos()
       .subscribe(data => {
         console.log(data)
         this.todoList = data;
@@ -86,21 +86,21 @@ export class TodosComponent implements OnInit, OnDestroy {
       )
   }
   deleteTodo(todoId: number): void {
-    this.todoServise.delTodo(todoId)
+    this.todoService.delTodo(todoId)
       .pipe(takeUntil(this.unsubscribe))
       .subscribe(() => {
         this.getTodos()
       });
   }
   updateTodo(todo: Todo): void {
-    this.todoServise.updateTodo(todo)
+    this.todoService.updateTodo(todo)
       .pipe(takeUntil(this.unsubscribe))
       .subscribe(() => {
         this.getTodos()
       })
   }
   async addTodo(todo: Todo): Promise<void> {
-    const res = await this.todoServise.addTodo(todo)
+    const res = await this.todoService.addTodo(todo)
       .toPromise();
     this.getTodos()
  

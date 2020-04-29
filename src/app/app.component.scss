@@ -1,5 +1,9 @@
-:host {
-  display  : flex;
+:host{
+  display: flex;
   flex-direction: column;
-  height: 765px;
+  min-height: 100%;
+}
+
+.content{
+  flex: 1 0 auto;
 }

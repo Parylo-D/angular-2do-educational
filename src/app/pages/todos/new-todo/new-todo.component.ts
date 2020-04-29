@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { Todo } from 'src/app/core/interfaces';
-import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-new-todo',
@@ -20,7 +20,7 @@ export class NewTodoComponent implements OnInit {
 
 
   constructor(
-    private modalService: BsModalService,
+    private modalRef: BsModalRef,
     private fb: FormBuilder
   ) { }
   ngOnInit(): void {
@@ -52,18 +52,20 @@ export class NewTodoComponent implements OnInit {
     })
   }
   onSubmit(): void {
-    
+    this.isSubmit = true;
+
     if (this.newTodoForm.invalid) {
-      this.isSubmit = true;
+      
       return
     }
     this.submit(this.newTodoForm.value);
     this.isSubmit = false;
     this.hideModal();
     this.newTodoForm.reset();
+    
   }
   hideModal() {
-    this.modalService.hide(1);
+    this.modalRef.hide();
   }
   submit(todo: Todo): void { }
 }
